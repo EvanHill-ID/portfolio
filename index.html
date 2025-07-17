@@ -1,83 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Evan Hill | Instructional Designer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --clr-bg-dark: #1f1f1f;
-      --clr-text-light: #f4f1ee;
-      --clr-accent: #d1a85d;
-      --font-sans: 'Open Sans', sans-serif;
-    }
-    body, html {
-      margin: 0; padding: 0;
-      height: 100%;
-      font-family: var(--font-sans);
-      color: var(--clr-text-light);
-    }
-    .hero {
-      position: relative;
-      width: 100%;
-      height: 80vh;
-      background: url('assets/koolau.jpg') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .hero::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-color: rgba(31, 31, 31, 0.6);
-    }
-    .hero-content {
-      position: relative;
-      text-align: center;
-      max-width: 800px;
-      padding: 1rem;
-    }
-    .hero-content h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-      color: var(--clr-accent);
-    }
-    .hero-content p {
-      font-size: 1.25rem;
-      line-height: 1.6;
-    }
-    .nav {
-      margin-top: 2rem;
-    }
-    .nav a {
-      margin: 0 12px;
-      color: #c4b998;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .nav a:hover {
-      color: #f4e6cc;
-    }
-  </style>
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <title>
+    Evan Hill | Instructional Designer
+  </title>
+  <meta name="description" content="Instructional design portfolio for Evan Hill." />
+  <meta name="keywords" content="Instructional Design, eLearning, Learning Experience Design, AI in Education, Portfolio" />
+  <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>I’m Evan — Instructional Designer</h1>
-      <p>I’m Evan — an instructional designer focused on building impactful learning. I bring deep experience and a collaborative mindset to every project. Let’s build together.</p>
-      <div class="nav">
-        <a href="#about">About</a>
-        <a href="#project">Flagship Project</a>
-        <a href="#chatbot">Chatbot</a>
-        <a href="#contact">Contact</a>
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Project</a></li>
+          <li class="nav__item"><a href="#chatbot" class="nav__link">Chatbot</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row" style="background: url('./images/koolau.jpg') center/cover no-repeat; background-size: cover; background-position: center;">
+      <div class="header__text" style="background-color: rgba(0, 0, 0, 0.5); padding: 2rem; border-radius: 10px;">
+        <h1 class="heading-primary">
+          <span>I'm Evan</span>
+        </h1>
+        <p>An instructional designer focused on impactful learning.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- Next sections go here... -->
+  <main role="main">
+    <!-- Content sections here -->
+  </main>
 
 </body>
+
 </html>
