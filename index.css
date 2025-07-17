@@ -1,91 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-  <title>
-    Evan Hill | Instructional Designer
-  </title>
-  <meta name="description" content="Instructional design portfolio for Evan Hill." />
-  <meta name="keywords" content="Instructional Design, eLearning, Learning Experience Design, AI in Education, Portfolio" />
-  <link rel="stylesheet" href="index.css" />
-  <style>
-    .header {
-      position: relative;
-      background: url('./images/GreenMountains.jpg') center/cover no-repeat;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #f4f1ec;
+  background: #1e1e1e url('./images/GreenMountains.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
 
-    .header::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 0;
-    }
+/* Header styles */
+.header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  padding: 2rem;
+}
 
-    .header__text-box {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      color: #fff;
-    }
+.header__text-box {
+  z-index: 1;
+}
 
-    .header__text {
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 2rem;
-      border-radius: 10px;
-    }
+.header__text span {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #d2b48c; /* warm beige tone */
+}
 
-    .heading-primary span {
-      font-size: 3rem;
-      font-weight: 700;
-    }
-  </style>
-</head>
+.header__text p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #e5e5e5;
+}
 
-<body>
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #4e6e5d;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
 
-  <!-- ***** Header ***** -->
+.btn:hover {
+  background-color: #3a5445;
+}
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Project</a></li>
-          <li class="nav__item"><a href="#chatbot" class="nav__link">Chatbot</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <span>I'm Evan</span>
-        </h1>
-        <p>An instructional designer focused on impactful learning.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
-    </div>
-  </header>
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
 
-  <main role="main">
-    <!-- Content sections here -->
-  </main>
+.nav__items {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
 
-</body>
+.nav__item .nav__link {
+  text-decoration: none;
+  color: #f4f1ec;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
 
-</html>
+.nav__item .nav__link:hover {
+  color: #b0c4a3;
+}
+
+/* Row utility class */
+.row {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
