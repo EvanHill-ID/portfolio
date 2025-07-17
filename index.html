@@ -6,67 +6,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
   <title>Evan Hill | Instructional Designer</title>
-  <meta name="description" content="Portfolio of Evan Hill, an Instructional Designer focused on impactful learning experiences." />
-  <meta name="keywords" content="Evan Hill, Instructional Design, eLearning, AI Coaching" />
+  <meta name="description" content="Instructional Design Portfolio of Evan Hill" />
+  <meta name="keywords" content="Evan Hill, Instructional Designer, eLearning, AI for Teachers" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
   <!-- ***** Header ***** -->
   <header class="header" role="banner" id="top">
-    <nav class="nav" role="navigation">
-      <ul class="nav__items">
-        <li class="nav__item"><a href="#work" class="nav__link">Project</a></li>
-        <li class="nav__item"><a href="#chatbot" class="nav__link">Chatbot</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Project</a></li>
+          <li class="nav__item"><a href="#chatbot" class="nav__link">Chatbot</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary"><span>I’m Evan</span></h1>
-        <p>I create learning experiences that save time and drive real impact.</p>
-        <a href="#contact" class="btn">Get in Touch</a>
+        <p>An instructional designer focused on building impactful learning.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
   </header>
 
-  <!-- ***** Main Content ***** -->
   <main role="main">
-    <!-- Project Section -->
-    <section class="section" id="work">
-      <h2>Flagship Project</h2>
-      <p>This interactive training helps educators build foundational AI skills to reduce burnout and focus on what matters most: their students.</p>
-      <img src="./images/openart-image_ku5MhrcC_1751043649493_raw.jpg" alt="Mr. Kumu at Laptop" style="max-width:100%; border-radius:10px; margin-bottom:20px;" />
-      <img src="./images/7a6b7bb0-779c-481f-b093-c8cf31de1bb0.png" alt="Project Welcome Screen" style="max-width:100%; border-radius:10px; margin-bottom:20px;" />
-      <img src="./images/openart-image_DMoFGl9N_1751652012286_raw.jpg" alt="Ms. Kalama in Classroom" style="max-width:100%; border-radius:10px; margin-bottom:20px;" />
+    <!-- ***** Work ***** -->
+    <section class="work" id="work">
+      <div class="row">
+        <h2>Flagship Project</h2>
+        <div class="work__boxes">
+          <div class="work__box">
+            <div class="work__text">
+              <h3>AI Practice Tool for Teachers</h3>
+              <p>This scenario-based eLearning tool helps teachers develop effective AI prompting skills to reduce burnout and focus on student needs.</p>
+              <ul class="work__list">
+                <li>Scenario-Based Design</li>
+                <li>Chatbot Integration</li>
+                <li>Articulate Storyline</li>
+                <li>Custom GPT Practice</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://frabjous-melomakarona-9a8cb6.netlify.app/story" class="link__text" target="_blank">
+                  View Project <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/openart-image_ku5MhrcC_1751043649493_raw.jpg" class="work__image" alt="Project Screenshot 1" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Chatbot Section -->
+    <!-- ***** Chatbot ***** -->
     <section class="section" id="chatbot">
-      <h2>Practice with Ms. Kalama</h2>
-      <p>Interact with the custom-built AI coach, Ms. Kalama. She’ll guide you through crafting effective classroom prompts.</p>
-      <iframe src="https://ms-kalama.onrender.com" width="100%" height="600"></iframe>
+      <div class="row">
+        <h2>Try the Ms. Kalama Chatbot</h2>
+        <p>Practice your AI prompting with the same custom GPT chatbot embedded in the eLearning course.</p>
+        <iframe src="https://ms-kalama.onrender.com/" width="100%" height="600"></iframe>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-      <h2>About Me</h2>
-      <p>I’m Evan — an instructional designer creating learning experiences that save time and drive real impact. With a background in education and leadership, I bring insight into how people learn and what truly supports their growth. I specialize in eLearning, scenario-based training, and thoughtful AI integration. I believe the best learning experiences are built with empathy, purposeful results, and collaboration. Let’s build together.</p>
+    <!-- ***** About ***** -->
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>I’m Evan — an instructional designer focused on building impactful learning. With a background in education and leadership, I bring insight into how people learn and what truly supports their growth. I specialize in eLearning, scenario-based training, and thoughtful AI integration. I believe the best learning experiences are built with empathy, purposeful results, and a collaborative spirit. Let’s build together.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-      <h2>Get in Touch</h2>
-      <p>Email: <a href="mailto:evancharleshill@gmail.com">evancharleshill@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/evan-charles-hill" target="_blank">evan-charles-hill</a></p>
+    <!-- ***** Contact ***** -->
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>Want to work together, ask a question, or just say hi? Reach out by email or LinkedIn!</p>
+          <a href="mailto:evancharleshill@gmail.com" class="btn">evancharleshill@gmail.com</a>
+          <br /><br />
+          <a href="https://www.linkedin.com/in/evan-charles-hill" target="_blank" class="btn">LinkedIn</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Evan Hill. Built with clarity and care.</p>
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <p>© 2025 Evan Hill | Built with love and learning</p>
+    </div>
   </footer>
 </body>
-
 </html>
