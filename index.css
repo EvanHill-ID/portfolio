@@ -1,47 +1,91 @@
-/* ===== Header Section Styling ===== */
+<!DOCTYPE html>
+<html lang="en">
 
-.header {
-  position: relative;
-  height: 100vh;
-  background: url('./images/GreenMountains.jpg') center/cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <title>
+    Evan Hill | Instructional Designer
+  </title>
+  <meta name="description" content="Instructional design portfolio for Evan Hill." />
+  <meta name="keywords" content="Instructional Design, eLearning, Learning Experience Design, AI in Education, Portfolio" />
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    .header {
+      position: relative;
+      background: url('./images/GreenMountains.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
-  z-index: 0;
-}
+    .header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
 
-.header__text-box {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  color: #fff;
-  padding: 2rem;
-}
+    .header__text-box {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: #fff;
+    }
 
-.heading-primary span {
-  font-size: 3rem;
-  font-weight: 700;
-  display: block;
-  margin-bottom: 1rem;
-}
+    .header__text {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 2rem;
+      border-radius: 10px;
+    }
 
-.header__text p {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-}
+    .heading-primary span {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  </style>
+</head>
 
-    .footer {
-        padding: var(--gutter-medium) 0;
-    } 
-}
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Project</a></li>
+          <li class="nav__item"><a href="#chatbot" class="nav__link">Chatbot</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>I'm Evan</span>
+        </h1>
+        <p>An instructional designer focused on impactful learning.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+    <!-- Content sections here -->
+  </main>
+
+</body>
+
+</html>
